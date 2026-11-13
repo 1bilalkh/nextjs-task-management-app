@@ -1,0 +1,195 @@
+
+.github-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 24px;
+  color: #1f2937;
+}
+
+.github-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.github-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.github-header p {
+  color: #6b7280;
+  margin-top: 10px;
+}
+
+.github-search {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.github-search input {
+  flex: 1;
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+}
+
+.github-search input:focus {
+  border-color: #2563eb;
+}
+
+.github-search button {
+  padding: 13px 22px;
+  background: #24292f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.github-search button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.github-error {
+  color: #dc2626;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.github-loading {
+  text-align: center;
+  padding: 20px;
+}
+
+.github-profile {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 25px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.github-avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.github-info h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.github-username {
+  color: #6b7280;
+  margin: 5px 0 12px;
+}
+
+.github-info a,
+.github-repo-card a {
+  display: inline-block;
+  color: #2563eb;
+  margin-top: 12px;
+  text-decoration: none;
+}
+
+.github-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.github-stats div {
+  padding: 22px;
+  text-align: center;
+  background: #f3f4f6;
+  border-radius: 10px;
+}
+
+.github-stats h3 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.github-stats p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.github-repositories h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.github-repo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.github-repo-card {
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.github-repo-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.github-repo-card p {
+  color: #6b7280;
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+.github-repo-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 13px;
+  color: #4b5563;
+}
+
+@media (max-width: 600px) {
+  .github-container {
+    margin: 20px auto;
+    padding: 16px;
+  }
+
+  .github-header h1 {
+    font-size: 25px;
+  }
+
+  .github-search {
+    flex-direction: column;
+  }
+
+  .github-search button {
+    width: 100%;
+  }
+
+  .github-profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .github-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .github-repo-grid {
+    grid-template-columns: 1fr;
+  }
+}
