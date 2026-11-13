@@ -153,3 +153,19 @@ body {
     margin-top: 10px;
     background: #17b6a3;
 }
+nav.navigation {
+    display: flex;
+    gap: 5px;
+}
+nav.navigation a {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #0d6d83;
+    background: #efebeb;
+    border-radius: 5px;
+}
+nav.navigation a:hover {
+    background: #11b36f;
+    color: #fff;
+}
